@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class Main {
     public static Employee[] employees = new Employee[10];
 
@@ -32,11 +34,11 @@ public class Main {
         return maxSalaryEmployee;
     }
 
-    public static Employee name() {
+    public static void name() {
         for (int i = 0; i < employees.length; i++) {
             System.out.println(employees[i].getNameEmployee());
         }
-        return null;
+
     }
 
 
@@ -66,10 +68,10 @@ public class Main {
         System.out.println("Сотрудник с максимальной ЗП является -- " + maxSalaryEmployee());
 
         System.out.println("**Подсчитать среднее значение зарплат**");
-        System.out.println("Среднее значение ЗП составляет = " + paymentsPerMonth(employees) / employees.length+" рублей");
+        System.out.println("Среднее значение ЗП составляет = " + paymentsPerMonth(employees) / employees.length + " рублей");
 
         System.out.println("**Распечатать ФИО всех сотрудников**");
-        System.out.println(name());
+        name();
 
 
     }
